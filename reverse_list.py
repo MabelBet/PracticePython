@@ -1,16 +1,8 @@
-# def reverse_lists(*elements):
-#     fruits = []
-#     fruits.append(elements)
-#     print(fruits)
-#     for element in fruits:
-#         print(element)
-#         print(fruits)
-#         print(elements)
-#         print(fruits.reverse())
-#         reversedl = fruits.reverse()
-#     return reversedl
-# reverse_lists("banana", "orange", "mango", "lemon")
+def reverse_list(arr = []):
+    new_arr = []
+    for i in arr[::-1]:
+        new_arr.append(i)
+    return new_arr
+arr_num = ["banana", "orange", "mango", "lemon"]
 
-fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits.reverse()
-print(fruits)
+print(reverse_list("banana", "orange", "mango", "lemon"))

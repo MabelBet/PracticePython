@@ -5,4 +5,4 @@ def reverse_list(arr = []):
     return new_arr
 arr_num = ["banana", "orange", "mango", "lemon"]
 
-print(reverse_list("banana", "orange", "mango", "lemon"))
+print(reverse_list(arr_num))

@@ -1,7 +1,6 @@
 def is_empty(character_to_check):
-    character = ""
-    if character == "":
+    if character_to_check == "":
         return True
     else:
         return False
-print(is_empty(" "))
+print(is_empty(""))

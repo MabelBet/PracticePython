@@ -21,14 +21,3 @@ def timeConversion(s):
     return print(':'.join(map(lambda x: str(x).rjust(2, '0'), time_list)))
 timeConversion("11:23pm")
     
-
-# if __name__ == '__main__':
-#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-#     s = input()
-
-#     result = timeConversion(s)
-
-#     fptr.write(result + '\n')
-
-#     fptr.close()

@@ -24,9 +24,7 @@
 # print(revertir("El león está en la selva y ruge sin parar"))
 
 # EXCECISES FROM ASABENEH 30-DAYS-OF-PYTHON
-# Explain the difference between map, filter and reduce
-# map is saved in a variable, recibe a function and a iterable and returns the application of that
-# function in each variable
+
 # Use map to create a new list by changing each country to uppercase in the countries list
 # countries = [
 #   'Afghanistan',
@@ -61,6 +59,42 @@
 #   squares = list(map(lambda x:x**2, numbers))
 #   return squares
 
-# Use filter to filter out countries containing 'land'.
+# Use filter to filter out countries containing 'ia'.
+# has_ia = list(filter(lambda country:country.endswith('ia'), countries))
+# print(has_ia)
 
+#  Use filter to filter out countries having exactly six characters
+# has_six_characters = list(filter(lambda country:len(country) == 6, countries))
+# print(has_six_characters)
 
+#  Use filter to filter out countries containing six letters and more in the country list.
+# has_six_or_more_characters = list(filter(lambda country:len(country) >= 6, countries))
+# print(has_six_or_more_characters)
+
+# Use filter to filter out countries starting with an 'B'
+# starts_with_b = list(filter(lambda country:country.startswith('B'), countries))
+# print(starts_with_b)
+
+# Declare a function called get_string_lists which takes a list as a parameter 
+# and then returns a list containing only string items.
+# def get_string_lists(lista):
+#   string_returned = ' '.join(str(element) for element in lista)
+#   return string_returned
+# lista = ['El', 'león', 'está', 'en', 'la', 'selva']
+# print(get_string_lists(lista))
+
+# Use reduce to sum all the numbers in the numbers list
+from functools import reduce
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# def sum_numbers(a, b):
+#   return a + b
+# total = reduce(sum_numbers, numbers)
+# print(total)
+
+# Use reduce to concatenate all the countries and to produce this sentence: 
+# Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+countries_list = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+
+concatenate_countries = reduce(lambda element:element.split(), countries_list)
+
+print(concatenate_countries)

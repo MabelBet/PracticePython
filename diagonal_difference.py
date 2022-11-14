@@ -1,8 +1,4 @@
-# numbers = [1, 2, 3, 4, 5, 6]
-# def square(lista):
-#     return lista ** 2
-    
-# print(list(map(square, numbers)))
+import pandas as pd
+url = "https://static.platzi.com/media/public/uploads/hpcharactersdataraw_3d934e85-dfa4-42ec-8520-fadfbecae574.json"
 
-name = "mabel es"
-print(list(name))
+pd.read_json(url)
